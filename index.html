@@ -8,18 +8,18 @@
   <script>
     function load() {
       console.log("loaded and redirecting");
-      document.cookie = `session=redirected!;expires=`;
-      const cookie = document.cookie;
-      if (cookie) {
-        console.log("cookie set", cookie);
-        const title = document.getElementById("title");
-        if (title) {
-          title.textContent = `cookie: ${cookie}`;
-        }
-      }
+//       document.cookie = `session=redirected!;expires=`;
+//       var cookie = document.cookie;
+//       if (cookie) {
+//         console.log("cookie set", cookie);
+//         var title = document.getElementById("title");
+//         if (title) {
+//           title.textContent = `cookie: ${cookie}`;
+//         }
+//       }
 
-      setTimeout(() => {
-        window.location.href =
+      setTimeout(function() {
+        return window.location.href =
           "https://cnotv.gitlab.io/iframe-dialog-redirect";
       }, 2000);
     }
